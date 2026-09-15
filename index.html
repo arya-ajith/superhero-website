@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOX // The Night Sentinel</title>
+  <meta name="description" content="NOX — a superhero help portal for people who need a way forward." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="nav">
+    <a class="brand" href="#"><span class="brand-dot"></span> NOX<span class="slash">/</span>HELP</a>
+    <div class="status"><span></span> SIGNAL ONLINE</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">NIGHT SENTINEL // ACTIVE</p>
+        <h1>When the world<br><em>goes quiet,</em><br>I listen.</h1>
+        <p class="lead">NOX watches over the problems that are too complicated, too urgent, or too lonely to solve alone.</p>
+        <button class="primary" id="openChat">Talk to NOX <span>→</span></button>
+        <div class="trust-line"><span>●</span> Private signal channel · Takes ~60 seconds</div>
+      </div>
+
+      <div class="hero-art" aria-label="Stylized illustration of NOX">
+        <div class="moon"></div>
+        <div class="halo"></div>
+        <div class="city city-back"></div>
+        <div class="city city-front"></div>
+        <div class="nox">
+          <div class="cape"></div>
+          <div class="body"></div>
+          <div class="head"><span class="eye eye-left"></span><span class="eye eye-right"></span></div>
+          <div class="arm arm-left"></div><div class="arm arm-right"></div>
+        </div>
+        <div class="scanline"></div>
+        <div class="signal">NOX<br><small>01 // ONLINE</small></div>
+        <div class="coordinates">10°32'N<br>76°13'E</div>
+      </div>
+    </section>
+
+    <section class="story">
+      <div class="section-label">01 / THE HERO</div>
+      <div class="story-grid">
+        <div>
+          <h2>A hero for the<br><span>problems between<br>the headlines.</span></h2>
+        </div>
+        <div class="story-text">
+          <p>NOX was born from one simple idea: most people don't need another search result. They need someone to actually understand what is happening.</p>
+          <p>With enhanced perception, rapid reasoning and the ability to map a problem into actionable steps, NOX turns confusion into a route forward.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="powers">
+      <div class="section-label">02 / ABILITIES</div>
+      <div class="power-grid">
+        <article><span>01</span><h3>Signal Sense</h3><p>Finds the important details hidden inside a messy situation.</p></article>
+        <article><span>02</span><h3>Night Vision</h3><p>Sees possible routes when the obvious answer isn't working.</p></article>
+        <article><span>03</span><h3>Rapid Response</h3><p>Turns a request into a clear, human-readable action plan.</p></article>
+        <article><span>04</span><h3>Never Judge</h3><p>Listens first. No lectures. No unnecessary forms. Just help.</p></article>
+      </div>
+    </section>
+
+    <section class="mission">
+      <div class="mission-card">
+        <p class="eyebrow">THE MISSION</p>
+        <h2>Every problem deserves<br><em>a way forward.</em></h2>
+        <p>Tell NOX what's going on. Your message becomes a signal — and a real person gets notified. No long forms. Just a conversation.</p>
+        <button class="primary" id="openChat2">Send a signal <span>↗</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>NOX / HELP PORTAL</span><span>© 2026 // SIGNAL SECURED</span></footer>
+
+  <div class="chat-overlay" id="chatOverlay" aria-hidden="true">
+    <div class="chat-shell">
+      <div class="chat-top">
+        <div><span class="avatar-mini">N</span><span><span class="online"></span> NOX <small>// NIGHT SENTINEL</small></span></div>
+        <button id="closeChat" aria-label="Close chat">×</button>
+      </div>
+      <div class="progress"><i id="progressBar"></i></div>
+      <div class="messages" id="messages"></div>
+      <div class="consent" id="consent"><label><input type="checkbox" id="consentCheck"> I agree to share these details so NOX can respond to my request.</label></div>
+      <form class="composer" id="chatForm">
+        <input id="chatInput" autocomplete="off" placeholder="Type your answer..." maxlength="1000" required />
+        <button type="submit">↗</button>
+      </form>
+      <div class="secure">YOUR SIGNAL IS READY TO BE SENT • <span>SECURE CHANNEL</span></div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
