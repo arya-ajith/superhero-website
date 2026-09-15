@@ -1,6 +1,5 @@
-# NOX // Superhero Help Portal
-
-A complete TechAscent Machine Test starter project based on the supplied brief.
+# NOX 
+- Superhero Help Portal
 
 ## What is included
 - Responsive superhero landing page
@@ -41,21 +40,6 @@ python3 -m http.server 5500
 
 Then open http://localhost:5500
 
-## Deploy
-Drag the folder into Netlify Drop, or import the repository into Vercel.
-
-## Suggested final improvements
-- Replace the CSS NOX artwork with a custom illustration if desired.
-- Add a small "how NOX works" interaction.
-- Add a confirmation reference number after successful submission.
-- Add privacy/consent copy before collecting personal information.
 
 
-## Competition-ready changes in v2
-- More distinctive NOX visual identity and HUD details
-- Animated scanline / signal aesthetic
-- Clear trust/consent step before transmission
-- Better validation and error recovery
-- Typing indicator for a more natural conversation
-- Improved mobile chat layout
-- Explicit privacy-oriented microcopy
+
